@@ -3,6 +3,9 @@ const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    devServer: {
+        port: 3000
+    },
     devtool: "cheap-module-eval-source-map",
     entry: "./src/index.js",
     output: {
