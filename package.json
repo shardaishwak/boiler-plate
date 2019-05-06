@@ -4,7 +4,6 @@
 	"description": "My own Boilerplate",
 	"main": "index.js",
 	"scripts": {
-		"test": "jest --watchAll",
 		"start": "webpack-dev-server",
 		"build": "rimraf dist && webpack --config webpack.prod.config.js --progress --profile --color",
 		"clear": "rimraf dist",
