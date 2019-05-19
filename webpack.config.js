@@ -2,10 +2,14 @@ const path = require("path")
 const autoprefixer = require("autoprefixer")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 
+const host = process.env.HOST || "0.0.0.0"
+
 module.exports = {
 	devServer: {
 		port: 3000,
-		overlay: true
+		overlay: true,
+		host,
+		disableHostCheck: true
 	},
 	devtool: "cheap-module-eval-source-map",
 	entry: "./src/index.js",
